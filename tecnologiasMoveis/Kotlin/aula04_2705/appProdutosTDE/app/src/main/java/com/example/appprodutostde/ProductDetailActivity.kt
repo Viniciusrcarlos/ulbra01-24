@@ -3,6 +3,7 @@ package com.example.appprodutostde
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toolbar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,10 +20,14 @@ class ProductDetailActivity : AppCompatActivity() {
         val image = findViewById<ImageView>(R.id.imgProduct)
         val price = findViewById<TextView>(R.id.tvProductPrice)
         val name = findViewById<TextView>(R.id.tvProductName)
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+
 
         price.text = productBundle?.price
         name.text = productBundle?.name
 
         Glide.with(this).load(productBundle?.urlImage).centerCrop().into(image)
+
     }
+
 }
