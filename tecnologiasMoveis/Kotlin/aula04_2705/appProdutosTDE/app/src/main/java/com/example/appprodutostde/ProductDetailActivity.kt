@@ -20,7 +20,6 @@ class ProductDetailActivity : AppCompatActivity() {
         val image = findViewById<ImageView>(R.id.imgProduct)
         val price = findViewById<TextView>(R.id.tvProductPrice)
         val name = findViewById<TextView>(R.id.tvProductName)
-        val toolbar = findViewById<Toolbar>(R.id.toolbar)
 
 
         price.text = productBundle?.price
