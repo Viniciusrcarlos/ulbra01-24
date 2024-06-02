@@ -13,8 +13,8 @@
             android:id="@+id/action_homeFragment_to_createProductFragment"
             app:destination="@id/createProductFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_productDetailActivity"
-            app:destination="@id/productDetailActivity" />
+            android:id="@+id/action_homeFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/createProductFragment"
@@ -25,9 +25,9 @@
             android:id="@+id/action_createProductFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
-    <activity
-        android:id="@+id/productDetailActivity"
-        android:name="com.example.appprodutostde.ProductDetailActivity"
-        android:label="activity_product_detail"
-        tools:layout="@layout/activity_product_detail" />
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.example.appprodutostde.ProductDetailFragment"
+        android:label="fragment_product_detail"
+        tools:layout="@layout/fragment_product_detail" />
 </navigation>

@@ -23,9 +23,10 @@ class MainActivity : AppCompatActivity() {
         val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
         val menuBottom = findViewById<BottomNavigationView>(R.id.menu_bottom)
         val navController = Navigation.findNavController(this, R.id.nav_host_fragment)
+
         setSupportActionBar(toolbar)
         NavigationUI.setupWithNavController(menuBottom, navController)
-        configureToolbar("Home", false)
+        configureToolbar("Produtos", false)
     }
 
 

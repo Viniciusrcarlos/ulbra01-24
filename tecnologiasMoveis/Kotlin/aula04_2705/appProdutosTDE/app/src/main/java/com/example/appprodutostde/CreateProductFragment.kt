@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
 class CreateProductFragment : Fragment() {
@@ -19,8 +20,11 @@ class CreateProductFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val name = view.findViewById<EditText>(R.id.productName)
+        val price = view.findViewById<EditText>(R.id.productPrice)
+        val url = "https://t3.ftcdn.net/jpg/04/91/00/82/240_F_491008206_6J87meZRmjPYlrTpBEeVzFSm1m3kqOd2.jpg"
 
-        (requireActivity() as AppCompatActivity).configureToolbar("Create Product", false)
+        (requireActivity() as AppCompatActivity).configureToolbar("Criar Produto", true)
     }
     
 }

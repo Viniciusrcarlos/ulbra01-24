@@ -46,8 +46,8 @@ class ProductAdapter(
     }
     inner class ViewHolder(view: View ): RecyclerView.ViewHolder(view) {
         val imageProduct: ImageView = view.findViewById(R.id.imgProduct)
-        val nameProduct: TextView = view.findViewById(R.id.tvProductName)
-        val priceProduct: TextView = view.findViewById(R.id.tvProductPrice)
+        val nameProduct: TextView = view.findViewById(R.id.productName)
+        val priceProduct: TextView = view.findViewById(R.id.productPrice)
     }
 
     private fun showPopUpMenu(view: View, position: Int) {
@@ -68,6 +68,11 @@ class ProductAdapter(
 
     private fun removeItem(product: Product) {
         items.remove(product)
+        notifyDataSetChanged()
+    }
+
+     fun addItem(product: Product) {
+        items.add(product)
         notifyDataSetChanged()
     }
 

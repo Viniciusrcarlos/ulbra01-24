@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        (requireActivity() as AppCompatActivity).configureToolbar("Home", false)
+        (requireActivity() as AppCompatActivity).configureToolbar("Produtos", true)
 
         mainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
 
@@ -39,7 +39,7 @@ class HomeFragment : Fragment() {
         val listOfProducts = mainViewModel.getProducts()
         val productAdapter = ProductAdapter(listOfProducts) {
             val bundle = bundleOf("data" to it)
-            findNavController().navigate(R.id.action_homeFragment_to_productDetailActivity, bundle)
+            findNavController().navigate(R.id.action_homeFragment_to_productDetailFragment, bundle)
         }
 
         recycler.adapter = productAdapter

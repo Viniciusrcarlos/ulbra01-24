@@ -36,4 +36,8 @@ class MainViewModel: ViewModel() {
     fun removeItem(index: Int) {
         list.removeAt(index)
     }
+
+    fun addItem(product: Product) {
+        list.add(product)
+    }
 }
