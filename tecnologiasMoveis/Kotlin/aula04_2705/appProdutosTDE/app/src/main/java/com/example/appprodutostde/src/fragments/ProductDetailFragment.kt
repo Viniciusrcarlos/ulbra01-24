@@ -1,4 +1,4 @@
-package com.example.appprodutostde
+package com.example.appprodutostde.src.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
+import com.example.appprodutostde.R
+import com.example.appprodutostde.src.core.models.Product
 
 class ProductDetailFragment : Fragment() {
 

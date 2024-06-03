@@ -6,7 +6,7 @@
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.appprodutostde.HomeFragment"
+        android:name="com.example.appprodutostde.src.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/createProductFragment"
-        android:name="com.example.appprodutostde.CreateProductFragment"
+        android:name="com.example.appprodutostde.src.fragments.CreateProductFragment"
         android:label="fragment_create_product"
         tools:layout="@layout/fragment_create_product" >
         <action
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/productDetailFragment"
-        android:name="com.example.appprodutostde.ProductDetailFragment"
+        android:name="com.example.appprodutostde.src.fragments.ProductDetailFragment"
         android:label="fragment_product_detail"
         tools:layout="@layout/fragment_product_detail" />
 </navigation>

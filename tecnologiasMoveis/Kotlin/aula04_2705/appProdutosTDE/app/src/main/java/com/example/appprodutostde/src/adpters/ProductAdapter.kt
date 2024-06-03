@@ -1,4 +1,4 @@
-package com.example.appprodutostde
+package com.example.appprodutostde.src.adpters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,25 +7,29 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.PopupMenu
 import android.widget.TextView
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.appprodutostde.R
+import com.example.appprodutostde.src.core.extensions.convertToMoneyWithSymbol
+import com.example.appprodutostde.src.core.models.Product
+import com.example.appprodutostde.src.view_models.MainViewModel
 
 class ProductAdapter(
     private val items: MutableList<Product>,
     private val goToDetail: (item: Product) -> Unit
 
 ) : RecyclerView.Adapter<ProductAdapter.ViewHolder>() {
-
     lateinit var context: Context
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         context = parent.context
 
         val view = LayoutInflater.from(parent.context).inflate(R.layout.product_item, parent, false)
         return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ProductAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.itemView.rootView.setOnClickListener {
             goToDetail(items[position])
         }
@@ -67,13 +71,11 @@ class ProductAdapter(
     }
 
     private fun removeItem(product: Product) {
-        items.remove(product)
+        MainViewModel().removeItem(product)
         notifyDataSetChanged()
     }
 
-     fun addItem(product: Product) {
-        items.add(product)
-        notifyDataSetChanged()
-    }
+
+
 
 }
