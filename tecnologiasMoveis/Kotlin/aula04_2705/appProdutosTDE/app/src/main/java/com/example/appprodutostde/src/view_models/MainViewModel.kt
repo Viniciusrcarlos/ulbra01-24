@@ -29,7 +29,7 @@ class MainViewModel : ViewModel() {
                     return@addSnapshotListener
                 }
 
-                snapshot?.let {
+                snapshot?.let { it ->
                     val products = mutableListOf<Product>()
                     for (document in it.documents) {
                         val product = document.toObject<Product>()

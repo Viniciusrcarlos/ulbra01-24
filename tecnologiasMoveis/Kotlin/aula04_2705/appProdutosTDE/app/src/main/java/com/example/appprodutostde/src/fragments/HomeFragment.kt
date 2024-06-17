@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -12,6 +13,7 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appprodutostde.R
 import com.example.appprodutostde.src.adpters.ProductAdapter
+import com.example.appprodutostde.src.core.extensions.configureToolbar
 import com.example.appprodutostde.src.view_models.MainViewModel
 
 class HomeFragment : Fragment() {
@@ -36,5 +38,6 @@ class HomeFragment : Fragment() {
             }
             recycler.adapter = productAdapter
         })
+        (requireActivity() as AppCompatActivity).configureToolbar("Produtos", true)
     }
 }

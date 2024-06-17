@@ -11,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
@@ -48,6 +49,7 @@ class CreateProductFragment : Fragment() {
 
         val name = view.findViewById<EditText>(R.id.etProductName)
         val price = view.findViewById<EditText>(R.id.etProductPrice)
+        val description = view.findViewById<EditText>(R.id.etProductDescription)
         val url =
             "https://t3.ftcdn.net/jpg/04/91/00/82/240_F_491008206_6J87meZRmjPYlrTpBEeVzFSm1m3kqOd2.jpg"
         val image = view.findViewById<View>(R.id.imgCreatedProduct)
@@ -56,31 +58,40 @@ class CreateProductFragment : Fragment() {
             startActivityForResult(intent, PICK_IMAGE_REQUEST)
         }
         view.findViewById<View>(R.id.btnSave).setOnClickListener {
-            if (imageUriGet == null) {
-                val product = Product(
-                    uuid = "",
-                    name = name.text.toString(),
-                    price = price.text.toString(),
-                    urlImage = url
-                )
-                viewModel.addItem(product)
-                requireActivity().onBackPressed()
+            if (description.text.toString().isEmpty() || name.text.toString()
+                    .isEmpty() || price.text.toString().isEmpty()
+            ) {
+                Toast.makeText(requireContext(), "Preencha todos os campos", Toast.LENGTH_SHORT)
+                    .show()
             } else {
-                viewModel.addPhotoStorage(Uri.parse(imageUriGet)) { downloadUrl ->
-                    if (downloadUrl != null) {
-                        val product = Product(
-                            uuid = "",
-                            name = name.text.toString(),
-                            price = price.text.toString(),
-                            urlImage = downloadUrl.toString()
-                        )
-                        viewModel.addItem(product)
+                if (imageUriGet == null) {
+
+                    val product = Product(
+                        uuid = "",
+                        name = name.text.toString(),
+                        price = price.text.toString(),
+                        urlImage = url,
+                        description = description.text.toString()
+
+                    )
+                    viewModel.addItem(product)
+                    requireActivity().onBackPressed()
+                } else {
+                    viewModel.addPhotoStorage(Uri.parse(imageUriGet)) { downloadUrl ->
+                        if (downloadUrl != null) {
+                            val product = Product(
+                                uuid = "",
+                                name = name.text.toString(),
+                                price = price.text.toString(),
+                                urlImage = downloadUrl.toString(),
+                                description = description.text.toString()
+                            )
+                            viewModel.addItem(product)
+                        }
                     }
+                    requireActivity().onBackPressed()
                 }
-                requireActivity().onBackPressed()
             }
-
-
         }
 
         (requireActivity() as AppCompatActivity).configureToolbar("Criar Produto", true)

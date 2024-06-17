@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.appprodutostde.R
+import com.example.appprodutostde.src.core.extensions.formatCurrency
 import com.example.appprodutostde.src.core.models.Product
 
 class ProductDetailFragment : Fragment() {
@@ -23,6 +24,7 @@ class ProductDetailFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_product_detail, container, false)
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -31,6 +33,7 @@ class ProductDetailFragment : Fragment() {
         val btnBack = view.findViewById<View>(R.id.btnBack)
         val price = view.findViewById<TextView>(R.id.productPrice)
         val name = view.findViewById<TextView>(R.id.productName)
+        val description = view.findViewById<TextView>(R.id.description)
 
         bottomNavigationView = requireActivity().findViewById(R.id.menu_bottom)
         toolbar = requireActivity().findViewById(R.id.toolbar)
@@ -38,14 +41,16 @@ class ProductDetailFragment : Fragment() {
         bottomNavigationView.visibility = View.GONE
         toolbar.visibility = View.GONE
 
-        price.text = productBundle?.price
+        price.text = productBundle?.price.toString().formatCurrency()
         name.text = productBundle?.name
+        description.text = productBundle?.description
 
         Glide.with(this).load(productBundle?.urlImage).centerCrop().into(image)
 
         btnBack.setOnClickListener {
             requireActivity().onBackPressed()
         }
+
     }
 
     override fun onDestroyView() {

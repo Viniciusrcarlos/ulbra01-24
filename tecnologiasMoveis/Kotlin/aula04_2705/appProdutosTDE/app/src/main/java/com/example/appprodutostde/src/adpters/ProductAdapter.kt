@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.appprodutostde.R
 import com.example.appprodutostde.src.core.extensions.convertToMoneyWithSymbol
+import com.example.appprodutostde.src.core.extensions.formatCurrency
 import com.example.appprodutostde.src.core.models.Product
 import com.example.appprodutostde.src.view_models.MainViewModel
 
@@ -39,8 +40,9 @@ class ProductAdapter(
             true
         }
 
-        holder.priceProduct.text = items[position].price.convertToMoneyWithSymbol()
+        holder.priceProduct.text = items[position].price.formatCurrency()
         holder.nameProduct.text = items[position].name
+        holder.descriptionProduct.text = items[position].description
 
         Glide.with(context).load(items[position].urlImage).into(holder.imageProduct)
     }
@@ -52,6 +54,7 @@ class ProductAdapter(
         val imageProduct: ImageView = view.findViewById(R.id.imgProduct)
         val nameProduct: TextView = view.findViewById(R.id.productName)
         val priceProduct: TextView = view.findViewById(R.id.productPrice)
+        val descriptionProduct: TextView = view.findViewById(R.id.description)
     }
 
     private fun showPopUpMenu(view: View, position: Int) {

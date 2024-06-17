@@ -6,7 +6,8 @@ data class Product(
     val uuid: String,
     val urlImage: String,
     val name: String,
-    val price: String
+    val price: String,
+    val description: String
 ) : Serializable{
-    constructor() : this("", "", "", "")
+    constructor() : this("", "", "", "", "")
 }
