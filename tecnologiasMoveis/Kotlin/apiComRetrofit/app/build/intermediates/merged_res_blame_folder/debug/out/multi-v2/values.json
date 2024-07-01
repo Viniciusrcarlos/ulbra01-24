@@ -42,23 +42,6 @@
                     }
                 },
                 {
-                    "source": "/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "51",
-                        "endOffsets": "63"
-                    },
-                    "to": {
-                        "startLines": "1984",
-                        "startColumns": "4",
-                        "startOffsets": "131283",
-                        "endColumns": "51",
-                        "endOffsets": "131330"
-                    }
-                },
-                {
                     "source": "/Users/viniciusraupp/.gradle/caches/transforms-4/509307a48c2166a83fe193e302f23c80/transformed/cardview-1.0.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,35,36,37,38,45,47,50,7",
@@ -111,6 +94,23 @@
                         "endLines": "109,9253,11218,11302",
                         "endColumns": "60,12,24,24",
                         "endOffsets": "5821,642087,713571,718087"
+                    }
+                },
+                {
+                    "source": "/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "51",
+                        "endOffsets": "63"
+                    },
+                    "to": {
+                        "startLines": "1984",
+                        "startColumns": "4",
+                        "startOffsets": "131283",
+                        "endColumns": "51",
+                        "endOffsets": "131330"
                     }
                 },
                 {
@@ -277,7 +277,7 @@
                     }
                 },
                 {
-                    "source": "/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/res/values/themes.xml",
+                    "source": "/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/res/values/themes.xml",
                     "from": {
                         "startLines": "2,7",
                         "startColumns": "4,4",
@@ -296,7 +296,7 @@
                     }
                 },
                 {
-                    "source": "/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/res/values/colors.xml",
+                    "source": "/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/res/values/colors.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

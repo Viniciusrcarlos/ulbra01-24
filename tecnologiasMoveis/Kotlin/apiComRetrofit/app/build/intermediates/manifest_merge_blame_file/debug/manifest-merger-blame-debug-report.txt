@@ -9,8 +9,8 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:5:22-64
+11-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:5:22-64
 12
 13    <permission
 13-->[androidx.core:core:1.13.1] /Users/viniciusraupp/.gradle/caches/transforms-4/5ca0c953a56df6641dcf841493051fce/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
@@ -24,45 +24,45 @@
 17-->[androidx.core:core:1.13.1] /Users/viniciusraupp/.gradle/caches/transforms-4/5ca0c953a56df6641dcf841493051fce/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:6:5-26:19
+19-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:6:5-26:19
 20        android:name="com.example.apicomretrofit.MyApplication"
-20-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:8:9-64
+20-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:8:9-64
 21        android:allowBackup="true"
-21-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:7:9-35
+21-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:7:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 22-->[androidx.core:core:1.13.1] /Users/viniciusraupp/.gradle/caches/transforms-4/5ca0c953a56df6641dcf841493051fce/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 23        android:dataExtractionRules="@xml/data_extraction_rules"
-23-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:9:9-65
+23-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:9:9-65
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:fullBackupContent="@xml/backup_rules"
-26-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:10:9-54
+26-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:10:9-54
 27        android:icon="@mipmap/ic_launcher"
-27-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:11:9-43
+27-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:11:9-43
 28        android:label="@string/app_name"
-28-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:12:9-41
+28-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:12:9-41
 29        android:roundIcon="@mipmap/ic_launcher_round"
-29-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:13:9-54
+29-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:13:9-54
 30        android:supportsRtl="true"
-30-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:14:9-35
+30-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:14:9-35
 31        android:testOnly="true"
 32        android:theme="@style/Theme.ApiComRetrofit" >
-32-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:15:9-52
+32-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:15:9-52
 33        <activity
-33-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:17:9-25:20
+33-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:17:9-25:20
 34            android:name="com.example.apicomretrofit.MainActivity"
-34-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:18:13-67
+34-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:18:13-67
 35            android:exported="true" >
-35-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:19:13-36
+35-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:19:13-36
 36            <intent-filter>
-36-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:20:13-24:29
+36-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:20:13-24:29
 37                <action android:name="android.intent.action.MAIN" />
-37-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:21:17-69
-37-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:21:25-66
+37-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:21:17-69
+37-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:21:25-66
 38
 39                <category android:name="android.intent.category.LAUNCHER" />
-39-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:23:17-77
-39-->/Users/viniciusraupp/AndroidStudioProjects/apiComRetrofit/app/src/main/AndroidManifest.xml:23:27-74
+39-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:23:17-77
+39-->/Users/viniciusraupp/Documents/Github/ulbra01-24/tecnologiasMoveis/Kotlin/apiComRetrofit/app/src/main/AndroidManifest.xml:23:27-74
 40            </intent-filter>
 41        </activity>
 42

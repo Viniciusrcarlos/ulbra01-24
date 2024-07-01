@@ -6,9 +6,5 @@
     {
         "merged": "br.com.ulbra.apicomretrofit.app-mergeDebugResources-40:/layout/character_item.xml",
         "source": "br.com.ulbra.apicomretrofit.app-main-43:/layout/character_item.xml"
-    },
-    {
-        "merged": "/Users/viniciusraupp/.gradle/daemon/8.7/br.com.ulbra.apicomretrofit.app-mergeDebugResources-40:/layout/activity_main.xml",
-        "source": "/Users/viniciusraupp/.gradle/daemon/8.7/br.com.ulbra.apicomretrofit.app-main-43:/layout/activity_main.xml"
     }
 ]
