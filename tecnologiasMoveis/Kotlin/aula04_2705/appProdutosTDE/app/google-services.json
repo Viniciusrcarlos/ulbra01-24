@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "564558612190",
+    "project_id": "app-produtos-ap2",
+    "storage_bucket": "app-produtos-ap2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564558612190:android:369f6072ae8a0796ab244f",
+        "android_client_info": {
+          "package_name": "com.example.appprodutostde"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU0WFvuwtjJi-N9A9eIEzCkFVL10IBqZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

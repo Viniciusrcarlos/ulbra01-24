@@ -1,6 +1,5 @@
-package com.example.appprodutostde
+package com.example.appprodutostde.src.core.extensions
 
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 fun AppCompatActivity.configureToolbar(title: String, enableBackButton: Boolean) {

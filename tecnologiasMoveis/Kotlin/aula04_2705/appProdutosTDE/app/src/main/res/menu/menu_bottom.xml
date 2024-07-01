@@ -3,9 +3,9 @@
     <item
         android:id="@+id/homeFragment"
         android:icon="@drawable/baseline_home_24"
-        android:title="Home" />
+        android:title="Produtos" />
     <item
         android:id="@+id/createProductFragment"
         android:icon="@drawable/baseline_add_24"
-        android:title="Add" />
+        android:title="Adicionar Produto" />
 </menu>
