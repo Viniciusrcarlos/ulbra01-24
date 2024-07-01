@@ -7,7 +7,7 @@ data class CharactersResponse(
     @SerializedName("name")
     val name: String,
     @SerializedName("image")
-    val image: String
+    val image: String,
 )
 
 fun CharactersResponse.toModel() = Character(name = this.name, image = this.image)

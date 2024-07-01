@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.com.ulbra.apicomretrofit.databinding.CharacterItemBinding
+import com.bumptech.glide.Glide
 import com.example.apicomretrofit.data.Character
 
 class CharacterAdapter : RecyclerView.Adapter<CharacterAdapter.ViewRolder>() {
@@ -35,6 +36,7 @@ class CharacterAdapter : RecyclerView.Adapter<CharacterAdapter.ViewRolder>() {
     inner class ViewRolder(private val bindingHolder: CharacterItemBinding): RecyclerView.ViewHolder(bindingHolder.root) {
         fun bind(character: Character) {
             bindingHolder.character = character
+            Glide.with(context).load(character.image).into(bindingHolder.imgProduct)
         }
     }
 }

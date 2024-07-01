@@ -28,6 +28,7 @@
                 android:layout_width="140dp"
                 android:layout_height="200dp"
                 android:scaleType="centerCrop"
+                app:carregaImg="@{character.image}"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:src="@mipmap/ic_launcher" />
